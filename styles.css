@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #ebf2f5;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 600 18px Nunito, sans-serif;
+}
+
+.section-homepage {
+  background-image: url("https://i3.wp.com/jasperadventure.com.br/wp-content/uploads/2017/11/bolivia-cordillera-real-2-1024x630.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.section-homepage .content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  max-height: 680px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  top: 10%;
+}
+
+.section-homepage .title {
+  font-size: 110px;
+}
+
+.section-motivation {
+  height: 90vh;
+  width: 100vw;
+}
+
+.section-motivation .title {
+  text-align: center;
+  margin-top: 25px;
+  color: #222222;
+}
+
+.section-motivation .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 120px;
+}
+
+.section-motivation .content-wrapper p {
+  color: #222222;
+  width: 350px;
+  margin-right: 40px;
+}
+
+.section-case {
+  height: 90vh;
+  width: 100vw;
+  background-color: #721cff;
+  overflow: hidden;
+}
+
+.section-case .case-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card.case {
+  height: 400px;
+}
+
+.section-testimony {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(138.25deg, #7dd3ff 19.35%, #00a8ff 82.24%);
+  overflow: hidden;
+}
+
+.section-testimony .content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  max-height: 680px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-testimony .content-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-testimony .card.testimony {
+  height: 350px;
+  width: 500px;
+}
+
+.section-contact {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-contact .content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  max-height: 680px;
+  margin: 0 auto;
+  padding-top: 90px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-contact .content-wrapper .maps {
+  width: 450px;
+  height: 500px;
+  background: #7dd3ff;
+  position: absolute;
+  z-index: 99;
+  /* box-shadow: -15px 15px 0px 3px #444; */
+}
+.section-contact .content-wrapper .maps-shadow {
+  width: 450px;
+  height: 500px;
+  background: #444;
+  margin-left: -15px;
+  margin-top: 15px;
+  z-index: 9;
+  /* box-shadow: -15px 15px 0px 3px #444; */
+}
