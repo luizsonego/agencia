@@ -5,8 +5,8 @@
 }
 
 body {
-  background: #ffffff;
-  color: #ebf2f5;
+  /* background: #ffffff;
+  color: #ebf2f5; */
 }
 
 body,
@@ -17,7 +17,7 @@ textarea {
 }
 
 .section-homepage {
-  background-image: url("https://i3.wp.com/jasperadventure.com.br/wp-content/uploads/2017/11/bolivia-cordillera-real-2-1024x630.jpg");
+  background-image: url("assets/img/header.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ textarea {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -115,13 +115,37 @@ textarea {
 
 .section-testimony .content-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
+
+/* .section-testimony:hover .content-icons img {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+} */
 
 .section-testimony .card.testimony {
   height: 350px;
   width: 500px;
+  z-index: 9;
+}
+
+.section-testimony .card .img-testimony {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.section-testimony .card.testimony {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section-contact {
@@ -160,3 +184,4 @@ textarea {
   z-index: 9;
   /* box-shadow: -15px 15px 0px 3px #444; */
 }
+

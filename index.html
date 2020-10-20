@@ -147,8 +147,8 @@
     <section class="section-homepage">
       <div class="overlay"></div>
       <div class="content-wrapper">
-        <h1 class="title">VÁ MAIS LONGE</h1>
-        <h2 class="sub-title">Com sua empresa na internet</h2>
+        <h1 class="title text-white">VÁ MAIS LONGE</h1>
+        <h2 class="sub-title text-white">Com sua empresa na internet</h2>
       </div>
       <div class="bottom-info"></div>
     </section>
@@ -189,100 +189,123 @@
 
     <section class="section-testimony">
       <div class="content-wrapper">
-        <div class="card testimony">12</div>
+        <div class="card testimony">
+          <img src="https://picsum.photos/id/237/200/300" alt="" class="img-testimony">
+          <h3>Name</h3>
+          <p>Hodor hodor – hodor – hodor hodor – hodor. Hodor hodor, hodor. Hodor hodor hodor hodor? Hodor hodor – hodor… Hodor hodor hodor… Hodor hodor hodor hodor! Hodor hodor HODOR! Hodor hodor;</p>
+        </div>
       </div>
 
       <div class="content-icons">
         <img
-          src="https://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+          src="assets/img/icons/facebook.svg"
           alt=""
-          width="40px"
+          width="55px"
           data-rellax-speed="-4"
           data-rellax-percentage="1"
           class="rellax"
         />
         <img
-          src="https://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+          src="assets/img/icons/messenger.svg"
+          alt=""
+          width="50px"
+          data-rellax-speed="2"
+          class="rellax"
+        />
+        <img
+          src="assets/img/icons/instagram.svg"
           alt=""
           width="40px"
           data-rellax-speed="-7"
           class="parallax"
         />
+
         <img
-          src="https://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+          src="assets/img/icons/telegram.svg"
           alt=""
           width="40px"
-          data-rellax-speed="2"
+          data-rellax-speed="1"
           class="rellax"
         />
         <img
-          src="https://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+          src="assets/img/icons/messenger.svg"
+          alt=""
+          width="30px"
+          data-rellax-speed="-2"
+          class="rellax"
+        />
+        <img
+          src="assets/img/icons/social.svg"
           alt=""
           width="40px"
           data-rellax-speed="-9"
           class="parallax"
         />
         <img
-          src="https://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+          src="assets/img/icons/instagram.svg"
+          alt=""
+          width="60px"
+          data-rellax-speed="-2"
+          class="parallax"
+        />
+        <img
+          src="assets/img/icons/telegram.svg"
           alt=""
           width="40px"
-          data-rellax-speed="1"
+          data-rellax-speed="2"
           class="rellax"
         />
       </div>
+      
     </section>
 
     <section class="section-contact">
       <div class="container">
-        <div class="content-wrapper">
-          <div class="form">
-            <h1>Contato</h1>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <small id="emailHelp" class="form-text text-muted"
-                  >We'll never share your email with anyone else.</small
-                >
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="form-group form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
-                >
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-
-          <div class="m">
-            <div
-              class="maps parallax"
-              data-rellax-speed="0"
-            ></div>
-            <div
-              class="maps-shadow parallax"
-              data-rellax-speed="-1"
-            ></div>
+        <div class="row justify-content-md-center mt-5">
+          <div class="col-md-8">
+            <div class="form">
+              <h2>Contato</h2>
+              <form  method="post">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                  />
+                </div>
+  
+                <div class="form-group">
+                  <label for="telefone">Telefone/whatsapp</label>
+                  <input
+                    type="text"
+                    class="form-control cellphone"
+                    id="phone"
+                  />
+                  
+                </div>
+                <input type="button" class="btn btn-primary" value="Send Email" onclick="sendEmail()">
+              </form>
+            </div>
+  
           </div>
         </div>
+        <div class="content-wrapper">
+          
+          <!-- <div class="m">
+            <div class="maps parallax" data-rellax-speed="0"></div>
+            <div class="maps-shadow parallax" data-rellax-speed="-1"></div>
+          </div>
+        </div> -->
       </div>
     </section>
 
@@ -311,16 +334,29 @@
       type="text/javascript"
     ></script>
 
+    <script src="assets/js/jquery.mask.js" type="text/javascript"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+
     <script src="node_modules/rellax/rellax.js" type="text/javascript"></script>
     <script>
       $(document).ready(function () {
-        // the body of this function is in assets/js/now-ui-kit.js
-        // nowuiKit.initSliders();
-
         var rellax = new Rellax(".rellax");
         var rellax = new Rellax(".parallax", {
           center: true,
         });
+
+        var SPMaskBehavior = function (val) {
+          return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+          onKeyPress: function(val, e, field, options) {
+              field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+        $('.cellphone').mask(SPMaskBehavior, spOptions);
+
       });
 
       function scrollToDownload() {
@@ -332,6 +368,22 @@
             1000
           );
         }
+      }
+
+      function sendEmail() {
+        Email.send({
+            Host : "smtp.mailtrap.io",
+            Username : "16923f1446e4d3",
+            Password : "5b06a25bc64143",
+            To : 'recipient@example.com',
+            From : "sender@example.com",
+            Subject : "Contato recebido via site",
+            Body : "<html><h2> Nome: "+ escape(document.getElementById('name').value) +"</h2> "
+              + "<p>Email: "+ escape(document.getElementById('email').value) +" </p><br></br> "
+              + "<p>Telefone: "+ escape(document.getElementById('phone').value) +" </p></html>"
+        }).then(
+          message => alert(message)
+        );
       }
     </script>
   </body>
